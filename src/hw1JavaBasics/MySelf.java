@@ -1,4 +1,5 @@
 package hw1JavaBasics;
+
 /* The naming convention of 
  Project - starts with upper case and then next words are camelcase.
  Package - starts with lower case and next words are camelcase.
@@ -11,7 +12,9 @@ public class MySelf {
 	public static void main(String[] args) {
 		System.out.println("Md Amjad Ali");
 		System.out.println("952 E Lovejoy Street, Buffalo NY 14206");
-		
+		System.out.println("\"EnthrallIT\"");
+
 	}
 
 }
+
