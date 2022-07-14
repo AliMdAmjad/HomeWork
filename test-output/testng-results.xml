@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-14T16:42:02 EDT" name="Default suite" finished-at="2022-07-14T16:42:13 EDT" duration-ms="11408">
+    <groups>
+    </groups>
+    <test started-at="2022-07-14T16:42:02 EDT" name="Default test" finished-at="2022-07-14T16:42:13 EDT" duration-ms="11408">
+      <class name="homeWork14.Hw14_name_locator">
+        <test-method is-config="true" signature="setup()[pri:0, instance:homeWork14.Hw14_name_locator@6fd83fc1]" started-at="2022-07-14T16:42:02 EDT" name="setup" finished-at="2022-07-14T16:42:06 EDT" duration-ms="4351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test()[pri:0, instance:homeWork14.Hw14_name_locator@6fd83fc1]" started-at="2022-07-14T16:42:06 EDT" name="test" finished-at="2022-07-14T16:42:13 EDT" duration-ms="6443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:homeWork14.Hw14_name_locator@6fd83fc1]" started-at="2022-07-14T16:42:13 EDT" name="tearUp" finished-at="2022-07-14T16:42:13 EDT" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+      </class> <!-- homeWork14.Hw14_name_locator -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
