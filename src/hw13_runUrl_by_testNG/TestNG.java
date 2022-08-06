@@ -1,4 +1,4 @@
-package hw13_testNG_run_url;
+package hw13_runUrl_by_testNG;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -6,7 +6,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestMethod {
+public class TestNG {
 	WebDriver driver;
 
 	@BeforeTest

@@ -1,4 +1,4 @@
-package homeWork14;
+package hw14_locator;
 
 import java.time.Duration;
 

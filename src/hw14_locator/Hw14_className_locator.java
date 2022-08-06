@@ -1,4 +1,4 @@
-package homeWork14;
+package hw14_locator;
 
 import java.time.Duration;
 
@@ -9,7 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Hw14_partialLinkText_locator {
+public class Hw14_className_locator {
 
 	WebDriver driver;
 
@@ -19,14 +19,14 @@ public class Hw14_partialLinkText_locator {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get("https://www.ebay.com/");
+		driver.get("https://www.bestbuy.com/");
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 
 	@Test
 	public void test() throws InterruptedException {
-		driver.findElement(By.partialLinkText("Brand Outl")).click();
+		driver.findElement(By.className("store-display-name")).click();
 		Thread.sleep(5000);
 
 	}

@@ -1,4 +1,4 @@
-package homeWork14;
+package hw15_seleniumMethod;
 
 import java.time.Duration;
 
@@ -9,32 +9,30 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Hw14_className_locator {
+public class Se_04_isSelected_method {
 
 	WebDriver driver;
 
 	@BeforeTest
-	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+	public void setUp() {
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get("https://www.bestbuy.com/");
+		driver.get("https://meserollshop.com/collections/frames");
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 
 	@Test
-	public void test() throws InterruptedException {
-		driver.findElement(By.className("store-display-name")).click();
-		Thread.sleep(5000);
-
+	public void test() {
+		boolean isSelected = driver.findElement(By.xpath("//a[@title='Narrow selection to products matching tag Brand_BSD']")).isSelected();
+		System.out.println("Is the box selected? Ans: " + isSelected);
 	}
 
 	@AfterTest
 	public void tearUp() {
 		driver.quit();
-
 	}
 
 }
